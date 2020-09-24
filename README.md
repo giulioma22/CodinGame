@@ -1,7 +1,7 @@
 # CODINGAME SOLUTIONS
 
 Reference puzzles from www.codingame.com  
-(Profile: codingame.com/profile/6fd26e5ad551969b53d688825dace3397633043)
+(Profile: www.codingame.com/profile/6fd26e5ad551969b53d688825dace3397633043)
 
 ## :new_moon: Shadows of the Knight - Episode 1 (Solved: 7/7) :heavy_check_mark:
 
@@ -11,7 +11,7 @@ Batman will look for the hostages on a given building by jumping from one window
 
 <details>
   <summary>Show</summary>
-
+<br>
 Before each jump, the heat-signature device will provide Batman with the direction of the bombs based on Batman current position:  
   
 U (Up)  
@@ -37,7 +37,7 @@ Calculate the number of squares in a partitioned rectangle.
 
 <details>
   <summary>Show</summary>
-
+<br>
 There is a rectangle of given width w and height h.  
   
 On the width side, you are given a list of measurements.  
@@ -57,7 +57,7 @@ You are given N maps for a dungeon. Each map may contain a path to a treasure T,
 
 <details>
   <summary>Show</summary>
-
+<br>
 A path is marked on the map with ^, v, <, > symbols, each corresponding to UP, DOWN, LEFT, RIGHT directions respectively, i.e. each symbol shows you the next cell to move on.  
   
 A valid path must start from [ startRow; startCol ] and end on T.  
@@ -76,7 +76,7 @@ Each input cell's content is provided as an operation with two operands arg1 and
 
 <details>
   <summary>Show</summary>
-
+<br>
 There are 4 types of operations:  
 VALUE arg1 arg2: The cell's value is arg1, (arg2 is not used and will be "_" to aid parsing).  
 ADD arg1 arg2: The cell's value is arg1 + arg2.  
@@ -103,7 +103,7 @@ During World War II, the Germans were using an encryption code called Enigma –
 
 <details>
   <summary>Show</summary>
-
+<br>
 Here's How the basic machine works:<br>
 <br>
 First Caesar shift is applied using an incrementing number:<br>
@@ -128,5 +128,21 @@ EKMFLGDQVZNTOWYHXUSPAIBRCJ<br>
 So BHD becomes KQF.<br>
 <br>
 Final output is sent via Radio Transmitter.<br>
+
+</details>
+
+## :1234: Sudoku Validator (Solved: 7/7) :heavy_check_mark:
+
+Check if a given Sudoku was correctly filled or not.<br>
+
+### Rules :book:
+
+<details>
+  <summary>Show</summary>
+<br>
+A sudoku grid consists of 9×9 = 81 cells split in 9 sub-grids of 3×3 = 9 cells.<br>
+For the grid to be correct, each row must contain one occurrence of each digit (1 to 9), each column must contain one occurrence of each digit (1 to 9) and each sub-grid must contain one occurrence of each digit (1 to 9).<br>
+<br>
+You shall answer true if the grid is correct or false if it is not.<br>
 
 </details>
