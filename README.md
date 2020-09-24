@@ -7,11 +7,11 @@ Reference puzzles from www.codingame.com
 
 Batman will look for the hostages on a given building by jumping from one window to another using his grapnel gun. Batman's goal is to jump to the window where the hostages are located in order to disarm the bombs. Unfortunately he has a limited number of jumps before the bombs go off...
 
+<details>
+  <summary>Show more</summary>
+
 ### Rules :book:
 
-<details>
-  <summary>Show</summary>
-<br>
 Before each jump, the heat-signature device will provide Batman with the direction of the bombs based on Batman current position:  
   
 U (Up)  
@@ -33,11 +33,11 @@ Buildings are represented as a rectangular array of windows, the window in the t
 
 Calculate the number of squares in a partitioned rectangle.
 
+<details>
+  <summary>Show more</summary>
+
 ### Rules :book:
 
-<details>
-  <summary>Show</summary>
-<br>
 There is a rectangle of given width w and height h.  
   
 On the width side, you are given a list of measurements.  
@@ -53,11 +53,11 @@ In all sub-rectangles (include the combinations of smaller rectangles), how many
 
 You are given N maps for a dungeon. Each map may contain a path to a treasure T, from starting position. Determine the index of the map which holds the shortest path from the starting position to T, but be careful a map may lead you to a TRAP.
 
+<details>
+  <summary>Show more</summary>
+
 ### Rules :book:
 
-<details>
-  <summary>Show</summary>
-<br>
 A path is marked on the map with ^, v, <, > symbols, each corresponding to UP, DOWN, LEFT, RIGHT directions respectively, i.e. each symbol shows you the next cell to move on.  
   
 A valid path must start from [ startRow; startCol ] and end on T.  
@@ -68,22 +68,22 @@ The path length is the count of direction symbols plus 1, for the T cell.
 
 ## :page_with_curl: 1D Spreadsheet (Solved: 13/13) :heavy_check_mark:
 
-You are given a 1-dimensional spreadsheet. You are to resolve the formulae and give the value of all its cells.  
-  
+You are given a 1-dimensional spreadsheet. You are to resolve the formulae and give the value of all its cells.<br>
+<br>
 Each input cell's content is provided as an operation with two operands arg1 and arg2.
+
+<details>
+  <summary>Show more</summary>
 
 ### Rules :book:
 
-<details>
-  <summary>Show</summary>
+There are 4 types of operations:<br>
+__VALUE__ arg1 arg2: The cell's value is arg1, (arg2 is not used and will be "_" to aid parsing).<br> 
+__ADD__ arg1 arg2: The cell's value is arg1 + arg2.<br>
+__SUB__ arg1 arg2: The cell's value is arg1 - arg2.<br>
+__MULT__ arg1 arg2: The cell's value is arg1 × arg2.<br>
 <br>
-There are 4 types of operations:  
-VALUE arg1 arg2: The cell's value is arg1, (arg2 is not used and will be "_" to aid parsing).  
-ADD arg1 arg2: The cell's value is arg1 + arg2.  
-SUB arg1 arg2: The cell's value is arg1 - arg2.  
-MULT arg1 arg2: The cell's value is arg1 × arg2.  
-  
-Arguments can be of two types:  
+Arguments can be of two types:<br>
 • __Reference__ $ref: If an argument starts with a dollar sign, it is a interpreted as a reference and its value is equal to the value of the cell by that number ref, 0-indexed.  
 For example, "$0" will have the value of the result of the first cell.  
 Note that a cell can reference a cell after itself!  
@@ -99,11 +99,11 @@ There won't be any cyclic references: a cell that reference itself or a cell tha
 
 During World War II, the Germans were using an encryption code called Enigma – which was basically an encryption machine that encrypted messages for transmission. The Enigma code went many years unbroken.
 
+<details>
+  <summary>Show more</summary>
+
 ### Rules :book:
 
-<details>
-  <summary>Show</summary>
-<br>
 Here's How the basic machine works:<br>
 <br>
 First Caesar shift is applied using an incrementing number:<br>
@@ -135,14 +135,33 @@ Final output is sent via Radio Transmitter.<br>
 
 Check if a given Sudoku was correctly filled or not.<br>
 
+<details>
+  <summary>Show more</summary>
+
 ### Rules :book:
 
-<details>
-  <summary>Show</summary>
-<br>
 A sudoku grid consists of 9×9 = 81 cells split in 9 sub-grids of 3×3 = 9 cells.<br>
 For the grid to be correct, each row must contain one occurrence of each digit (1 to 9), each column must contain one occurrence of each digit (1 to 9) and each sub-grid must contain one occurrence of each digit (1 to 9).<br>
 <br>
 You shall answer true if the grid is correct or false if it is not.<br>
+
+</details>
+
+## :mag: Detective Pikaptcha EP1 (Solved: 8/8) :heavy_check_mark:
+
+Detective Pikaptcha is investigating a disturbance in the spacetime continuum. It seems a powerful pokébot is being used to warp space around our hero to keep him trapped. Help him map his surroundings in order to escape and uncover the culprit!<br>
+<br>
+Your objective is to write a program that will compute, for each cell of a grid, the number of adjacent passages.
+
+<details>
+  <summary>Show more</summary>
+
+### Rules :book:
+
+You're given a grid filled with 0 and #, where 0 represents a passage, and # represents a wall: an impassable cell.<br>
+<br>
+We're considering the 4-adjacency, meaning a cell has a maximum of 4 adjacent cells (a diagonal cell is not adjacent).<br>
+<br>
+You must analyze the given grid and return it with a small transformation: for each empty cell, instead of a 0, you must return the number of its adjacent passable cells. For each impassable cell, you change nothing: you still return #.
 
 </details>
