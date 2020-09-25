@@ -5,10 +5,10 @@ Reference puzzles from www.codingame.com
 
 ## :new_moon: Shadows of the Knight - Episode 1 (Solved: 7/7) :heavy_check_mark:
 
-Batman will look for the hostages on a given building by jumping from one window to another using his grapnel gun. Batman's goal is to jump to the window where the hostages are located in order to disarm the bombs. Unfortunately he has a limited number of jumps before the bombs go off...
-
 <details>
   <summary>Show more</summary>
+
+Batman will look for the hostages on a given building by jumping from one window to another using his grapnel gun. Batman's goal is to jump to the window where the hostages are located in order to disarm the bombs. Unfortunately he has a limited number of jumps before the bombs go off...
 
 ### Rules :book:
 
@@ -31,10 +31,10 @@ Buildings are represented as a rectangular array of windows, the window in the t
 
 ## :black_square_button: Rectangle Partition (Solved: 9/9) :heavy_check_mark:
 
-Calculate the number of squares in a partitioned rectangle.
-
 <details>
   <summary>Show more</summary>
+
+Calculate the number of squares in a partitioned rectangle.
 
 ### Rules :book:
 
@@ -51,10 +51,10 @@ In all sub-rectangles (include the combinations of smaller rectangles), how many
 
 ## :twisted_rightwards_arrows: Dungeons and Maps (Solved: 6/6) :heavy_check_mark:
 
-You are given N maps for a dungeon. Each map may contain a path to a treasure T, from starting position. Determine the index of the map which holds the shortest path from the starting position to T, but be careful a map may lead you to a TRAP.
-
 <details>
   <summary>Show more</summary>
+
+You are given N maps for a dungeon. Each map may contain a path to a treasure T, from starting position. Determine the index of the map which holds the shortest path from the starting position to T, but be careful a map may lead you to a TRAP.
 
 ### Rules :book:
 
@@ -68,12 +68,12 @@ The path length is the count of direction symbols plus 1, for the T cell.
 
 ## :page_with_curl: 1D Spreadsheet (Solved: 13/13) :heavy_check_mark:
 
+<details>
+  <summary>Show more</summary>
+
 You are given a 1-dimensional spreadsheet. You are to resolve the formulae and give the value of all its cells.<br>
 <br>
 Each input cell's content is provided as an operation with two operands arg1 and arg2.
-
-<details>
-  <summary>Show more</summary>
 
 ### Rules :book:
 
@@ -97,10 +97,10 @@ There won't be any cyclic references: a cell that reference itself or a cell tha
 
 ## :unlock: Encryption/Decryption of Enigma Machine (Solved: 6/6) :heavy_check_mark:
 
-During World War II, the Germans were using an encryption code called Enigma – which was basically an encryption machine that encrypted messages for transmission. The Enigma code went many years unbroken.
-
 <details>
   <summary>Show more</summary>
+
+During World War II, the Germans were using an encryption code called Enigma – which was basically an encryption machine that encrypted messages for transmission. The Enigma code went many years unbroken.
 
 ### Rules :book:
 
@@ -133,10 +133,10 @@ Final output is sent via Radio Transmitter.<br>
 
 ## :1234: Sudoku Validator (Solved: 7/7) :heavy_check_mark:
 
-Check if a given Sudoku was correctly filled or not.<br>
-
 <details>
   <summary>Show more</summary>
+
+Check if a given Sudoku was correctly filled or not.<br>
 
 ### Rules :book:
 
@@ -149,12 +149,12 @@ You shall answer true if the grid is correct or false if it is not.<br>
 
 ## :mag: Detective Pikaptcha EP1 (Solved: 8/8) :heavy_check_mark:
 
+<details>
+  <summary>Show more</summary>
+
 Detective Pikaptcha is investigating a disturbance in the spacetime continuum. It seems a powerful pokébot is being used to warp space around our hero to keep him trapped. Help him map his surroundings in order to escape and uncover the culprit!<br>
 <br>
 Your objective is to write a program that will compute, for each cell of a grid, the number of adjacent passages.
-
-<details>
-  <summary>Show more</summary>
 
 ### Rules :book:
 
@@ -163,5 +163,33 @@ You're given a grid filled with 0 and #, where 0 represents a passage, and # rep
 We're considering the 4-adjacency, meaning a cell has a maximum of 4 adjacent cells (a diagonal cell is not adjacent).<br>
 <br>
 You must analyze the given grid and return it with a small transformation: for each empty cell, instead of a 0, you must return the number of its adjacent passable cells. For each impassable cell, you change nothing: you still return #.
+
+</details>
+
+## :mag: Detective Pikaptcha EP2 (Solved: 8/8) :heavy_check_mark:
+
+<details>
+  <summary>Show more</summary>
+
+Thanks to your help, Detective Pikaptcha was able to get a sense of where he was trapped: a space-warp maze! Pikaptcha knows well that a space-warp maze has no visible exit; he must find his own way.<br>
+<br>
+“Time to test a good old trick and see what happens: follow a wall and keep a count for each cell of how many times I stepped into it.”<br>
+<br>
+Your objective is to write a program that will compute, for each cell of a maze, the number of times Pikaptcha will step into the cell by following a wall until he reaches his original location.<br>
+
+### Rules :book:
+
+The maze is given to you as a grid filled with 0s and #s, where 0 represents a passage, and # represents a wall: an impassable cell.<br>
+The initial position and direction of Pikaptcha is given to you in the grid as a special character:<br>
+__>__: facing right<br>
+__v__: facing down<br>
+__<__: facing left<br>
+__^__: facing up<br>
+An additional character indicates which wall Pikaptcha must follow:<br>
+__R__ for the wall on his right<br>
+__L__ for the wall on his left<br>
+We’re considering the 4-adjacency, meaning a cell has a maximum of 4 adjacent cells (a diagonal cell is not adjacent).<br>
+<br>
+You must analyze the given maze and return it with a small transformation: for each empty cell, instead of a 0, you must return the number of times Pikaptcha stepped into that cell while striding along the maze, following a wall. For each impassable cell, you change nothing: you still return #.
 
 </details>
