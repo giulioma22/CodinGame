@@ -3,7 +3,7 @@
 Reference puzzles from www.codingame.com  
 (Profile: www.codingame.com/profile/6fd26e5ad551969b53d688825dace3397633043)
 
-## :new_moon: Shadows of the Knight - Episode 1 (Solved: 7/7) :heavy_check_mark:
+## :bat: Shadows of the Knight - Episode 1 (Solved: 7/7) :heavy_check_mark:
 
 <details>
   <summary>Show more</summary>
@@ -11,58 +11,21 @@ Reference puzzles from www.codingame.com
 Batman will look for the hostages on a given building by jumping from one window to another using his grapnel gun. Batman's goal is to jump to the window where the hostages are located in order to disarm the bombs. Unfortunately he has a limited number of jumps before the bombs go off...
 
 ### Rules :book:
-
-Before each jump, the heat-signature device will provide Batman with the direction of the bombs based on Batman current position:  
-  
-U (Up)  
-UR (Up-Right)  
-R (Right)  
-DR (Down-Right)  
-D (Down)  
-DL (Down-Left)  
-L (Left)  
-UL (Up-Left)  
-
-Your mission is to program the device so that it indicates the location of the next window Batman should jump to in order to reach the bombs' room as soon as possible.
-
+<br>
+Before each jump, the heat-signature device will provide Batman with the direction of the bombs based on Batman current position:<br>
+<br>
+U (Up)<br>
+UR (Up-Right)<br>
+R (Right)<br>
+DR (Down-Right)<br>
+D (Down)<br>
+DL (Down-Left)<br>
+L (Left)<br>
+UL (Up-Left)<br>
+<br>
+Your mission is to program the device so that it indicates the location of the next window Batman should jump to in order to reach the bombs' room as soon as possible.<br>
+<br>
 Buildings are represented as a rectangular array of windows, the window in the top left corner of the building is at index (0,0).
-
-</details>
-
-## :black_square_button: Rectangle Partition (Solved: 9/9) :heavy_check_mark:
-
-<details>
-  <summary>Show more</summary>
-
-Calculate the number of squares in a partitioned rectangle.
-
-### Rules :book:
-
-There is a rectangle of given width w and height h.  
-  
-On the width side, you are given a list of measurements.  
-On the height side, you are given another list of measurements.  
-  
-Draw perpendicular lines from the measurements to partition the rectangle into smaller rectangles.
-  
-In all sub-rectangles (include the combinations of smaller rectangles), how many of them are squares?
-
-</details>
-
-## :twisted_rightwards_arrows: Dungeons and Maps (Solved: 6/6) :heavy_check_mark:
-
-<details>
-  <summary>Show more</summary>
-
-You are given N maps for a dungeon. Each map may contain a path to a treasure T, from starting position. Determine the index of the map which holds the shortest path from the starting position to T, but be careful a map may lead you to a TRAP.
-
-### Rules :book:
-
-A path is marked on the map with ^, v, <, > symbols, each corresponding to UP, DOWN, LEFT, RIGHT directions respectively, i.e. each symbol shows you the next cell to move on.  
-  
-A valid path must start from [ startRow; startCol ] and end on T.  
-  
-The path length is the count of direction symbols plus 1, for the T cell.
 
 </details>
 
@@ -70,7 +33,7 @@ The path length is the count of direction symbols plus 1, for the T cell.
 
 <details>
   <summary>Show more</summary>
-
+<br>
 You are given a 1-dimensional spreadsheet. You are to resolve the formulae and give the value of all its cells.<br>
 <br>
 Each input cell's content is provided as an operation with two operands arg1 and arg2.
@@ -95,11 +58,75 @@ There won't be any cyclic references: a cell that reference itself or a cell tha
 
 </details>
 
+## :mag: Detective Pikaptcha EP1 (Solved: 8/8) :heavy_check_mark:
+
+<details>
+  <summary>Show more</summary>
+<br>
+Detective Pikaptcha is investigating a disturbance in the spacetime continuum. It seems a powerful pokébot is being used to warp space around our hero to keep him trapped. Help him map his surroundings in order to escape and uncover the culprit!<br>
+<br>
+Your objective is to write a program that will compute, for each cell of a grid, the number of adjacent passages.
+
+### Rules :book:
+
+You're given a grid filled with 0 and #, where 0 represents a passage, and # represents a wall: an impassable cell.<br>
+<br>
+We're considering the 4-adjacency, meaning a cell has a maximum of 4 adjacent cells (a diagonal cell is not adjacent).<br>
+<br>
+You must analyze the given grid and return it with a small transformation: for each empty cell, instead of a 0, you must return the number of its adjacent passable cells. For each impassable cell, you change nothing: you still return #.
+
+</details>
+
+## :mag: Detective Pikaptcha EP2 (Solved: 8/8) :heavy_check_mark:
+
+<details>
+  <summary>Show more</summary>
+<br>
+Thanks to your help, Detective Pikaptcha was able to get a sense of where he was trapped: a space-warp maze! Pikaptcha knows well that a space-warp maze has no visible exit; he must find his own way.<br>
+<br>
+“Time to test a good old trick and see what happens: follow a wall and keep a count for each cell of how many times I stepped into it.”<br>
+<br>
+Your objective is to write a program that will compute, for each cell of a maze, the number of times Pikaptcha will step into the cell by following a wall until he reaches his original location.<br>
+
+### Rules :book:
+
+The maze is given to you as a grid filled with 0s and #s, where 0 represents a passage, and # represents a wall: an impassable cell.<br>
+The initial position and direction of Pikaptcha is given to you in the grid as a special character:<br>
+__>__: facing right<br>
+__v__: facing down<br>
+__<__: facing left<br>
+__^__: facing up<br>
+An additional character indicates which wall Pikaptcha must follow:<br>
+__R__ for the wall on his right<br>
+__L__ for the wall on his left<br>
+We’re considering the 4-adjacency, meaning a cell has a maximum of 4 adjacent cells (a diagonal cell is not adjacent).<br>
+<br>
+You must analyze the given maze and return it with a small transformation: for each empty cell, instead of a 0, you must return the number of times Pikaptcha stepped into that cell while striding along the maze, following a wall. For each impassable cell, you change nothing: you still return #.
+
+</details>
+
+## :world_map: Dungeons and Maps (Solved: 6/6) :heavy_check_mark:
+
+<details>
+  <summary>Show more</summary>
+<br>
+You are given N maps for a dungeon. Each map may contain a path to a treasure T, from starting position. Determine the index of the map which holds the shortest path from the starting position to T, but be careful a map may lead you to a TRAP.
+
+### Rules :book:
+
+A path is marked on the map with ^, v, <, > symbols, each corresponding to UP, DOWN, LEFT, RIGHT directions respectively, i.e. each symbol shows you the next cell to move on.<br>
+<br>
+A valid path must start from [ startRow; startCol ] and end on T.<br>
+<br>
+The path length is the count of direction symbols plus 1, for the T cell.
+
+</details>
+
 ## :unlock: Encryption/Decryption of Enigma Machine (Solved: 6/6) :heavy_check_mark:
 
 <details>
   <summary>Show more</summary>
-
+<br>
 During World War II, the Germans were using an encryption code called Enigma – which was basically an encryption machine that encrypted messages for transmission. The Enigma code went many years unbroken.
 
 ### Rules :book:
@@ -131,11 +158,66 @@ Final output is sent via Radio Transmitter.<br>
 
 </details>
 
+## :candle: Lumen (Solved: 9/9) :heavy_check_mark:
+
+<details>
+  <summary>Show more</summary>
+<br>
+
+THEY put you in a square shape room, with N meters on each side.<br>
+THEY want to know everything about you.<br>
+THEY are observing you.<br>
+THEY placed some candles in the room.<br>
+
+### Rules :book:
+
+Every candle makes L "light" in the spot they are, and every spot in square shape gets one less "light" as the next ones. If a spot is touched by two candles, it will have the larger "light" it can have. Every spot has the base light of 0.<br>
+<br>
+You can hide only, if you find a dark spot which has 0 "light". How many dark spots you have?<br>
+<br>
+You will receive a map of the room, with the empty places (X) and Candles (C) in N rows, each character separated by a space.<br>
+<br>
+Example for the light spread N = 5, L = 3:<br>
+<br>
+X X X X X<br>
+X C X X X<br>
+X X X X X<br>
+X X X X X<br>
+X X X X X<br>
+<br>
+2 2 2 1 0<br>
+2 3 2 1 0<br>
+2 2 2 1 0<br>
+1 1 1 1 0<br>
+0 0 0 0 0<br>
+
+</details>
+
+## :diamond_shape_with_a_dot_inside: Rectangle Partition (Solved: 9/9) :heavy_check_mark:
+
+<details>
+  <summary>Show more</summary>
+<br>
+Calculate the number of squares in a partitioned rectangle.
+
+### Rules :book:
+
+There is a rectangle of given width w and height h.<br>
+<br>
+On the width side, you are given a list of measurements.<br>
+On the height side, you are given another list of measurements.<br>
+<br>
+Draw perpendicular lines from the measurements to partition the rectangle into smaller rectangles.<br>
+<br>
+In all sub-rectangles (include the combinations of smaller rectangles), how many of them are squares?
+
+</details>
+
 ## :1234: Sudoku Validator (Solved: 7/7) :heavy_check_mark:
 
 <details>
   <summary>Show more</summary>
-
+<br>
 Check if a given Sudoku was correctly filled or not.<br>
 
 ### Rules :book:
@@ -144,52 +226,5 @@ A sudoku grid consists of 9×9 = 81 cells split in 9 sub-grids of 3×3 = 9 cells
 For the grid to be correct, each row must contain one occurrence of each digit (1 to 9), each column must contain one occurrence of each digit (1 to 9) and each sub-grid must contain one occurrence of each digit (1 to 9).<br>
 <br>
 You shall answer true if the grid is correct or false if it is not.<br>
-
-</details>
-
-## :mag: Detective Pikaptcha EP1 (Solved: 8/8) :heavy_check_mark:
-
-<details>
-  <summary>Show more</summary>
-
-Detective Pikaptcha is investigating a disturbance in the spacetime continuum. It seems a powerful pokébot is being used to warp space around our hero to keep him trapped. Help him map his surroundings in order to escape and uncover the culprit!<br>
-<br>
-Your objective is to write a program that will compute, for each cell of a grid, the number of adjacent passages.
-
-### Rules :book:
-
-You're given a grid filled with 0 and #, where 0 represents a passage, and # represents a wall: an impassable cell.<br>
-<br>
-We're considering the 4-adjacency, meaning a cell has a maximum of 4 adjacent cells (a diagonal cell is not adjacent).<br>
-<br>
-You must analyze the given grid and return it with a small transformation: for each empty cell, instead of a 0, you must return the number of its adjacent passable cells. For each impassable cell, you change nothing: you still return #.
-
-</details>
-
-## :mag: Detective Pikaptcha EP2 (Solved: 8/8) :heavy_check_mark:
-
-<details>
-  <summary>Show more</summary>
-
-Thanks to your help, Detective Pikaptcha was able to get a sense of where he was trapped: a space-warp maze! Pikaptcha knows well that a space-warp maze has no visible exit; he must find his own way.<br>
-<br>
-“Time to test a good old trick and see what happens: follow a wall and keep a count for each cell of how many times I stepped into it.”<br>
-<br>
-Your objective is to write a program that will compute, for each cell of a maze, the number of times Pikaptcha will step into the cell by following a wall until he reaches his original location.<br>
-
-### Rules :book:
-
-The maze is given to you as a grid filled with 0s and #s, where 0 represents a passage, and # represents a wall: an impassable cell.<br>
-The initial position and direction of Pikaptcha is given to you in the grid as a special character:<br>
-__>__: facing right<br>
-__v__: facing down<br>
-__<__: facing left<br>
-__^__: facing up<br>
-An additional character indicates which wall Pikaptcha must follow:<br>
-__R__ for the wall on his right<br>
-__L__ for the wall on his left<br>
-We’re considering the 4-adjacency, meaning a cell has a maximum of 4 adjacent cells (a diagonal cell is not adjacent).<br>
-<br>
-You must analyze the given maze and return it with a small transformation: for each empty cell, instead of a 0, you must return the number of times Pikaptcha stepped into that cell while striding along the maze, following a wall. For each impassable cell, you change nothing: you still return #.
 
 </details>
