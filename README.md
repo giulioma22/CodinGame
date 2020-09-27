@@ -7,11 +7,11 @@ Reference puzzles from www.codingame.com
 
 <details>
   <summary>Show more</summary>
-
+<br>
 Batman will look for the hostages on a given building by jumping from one window to another using his grapnel gun. Batman's goal is to jump to the window where the hostages are located in order to disarm the bombs. Unfortunately he has a limited number of jumps before the bombs go off...
 
 ### Rules :book:
-<br>
+
 Before each jump, the heat-signature device will provide Batman with the direction of the bombs based on Batman current position:<br>
 <br>
 U (Up)<br>
@@ -26,6 +26,36 @@ UL (Up-Left)<br>
 Your mission is to program the device so that it indicates the location of the next window Batman should jump to in order to reach the bombs' room as soon as possible.<br>
 <br>
 Buildings are represented as a rectangular array of windows, the window in the top left corner of the building is at index (0,0).
+
+</details>
+
+## :vertical_traffic_light: Traffic Lights (ANEO Sponsored Puzzle) (Solved: 10/10) :heavy_check_mark:
+
+<details>
+  <summary>Show more</summary>
+<br>
+You enter a section of road and you plan to rest entirely on your cruise control to cross the area without having to stop or slow down.<br>
+<br>
+The goal is to find the maximum speed (off speeding) that will allow you to cross all the traffic lights to green.<br>
+<br>
+Warning: You can not cross a traffic light the second it turns red!<br>
+<br>
+Your vehicle enters the zone directly at the speed programmed on the cruise control which ensures that it does not change anymore.
+
+### Rules :book:
+
+You are given the following:<br>
+<br>
+- An integer speed for the maximum speed allowed on the portion of the road (in km/h).<br>
+<br>
+- An integer lightCount for the number of traffic lights on the road.<br>
+<br>
+- lightCount next lines:<br>
+- - An integer distance representing the distance of the traffic light from the starting point (in meters).<br>
+- - An integer duration representing the duration of the traffic light on each color.<br>
+<br>
+A traffic light alternates a period of duration seconds in green and then duration seconds in red.<br>
+All traffic lights turn green at the same time as you enter the area.<br>
 
 </details>
 
