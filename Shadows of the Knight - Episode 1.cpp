@@ -1,11 +1,7 @@
 #include <iostream>
-#include <string>
 #include <vector>
-#include <algorithm>
 #include <map>
 #include <cmath>
-
-#define ERR(x) cerr << x << endl
 
 using namespace std;
 
@@ -27,7 +23,6 @@ int main()
     cin >> CURR.x >> CURR.y; cin.ignore();
 
     int jumpX, jumpY, minX = 0, minY = 0, maxX = W, maxY = H;
-    double den = 1.9;
     bool first_loop = true;
 
     while (1) {
@@ -46,11 +41,11 @@ int main()
         else if (CURR.dy == -1 && CURR.y < maxY) {maxY = CURR.y;}
 
         if (first_loop){
-            jumpX = CURR.dx == 1 ? round(abs(W-1-CURR.x)/den) : round(abs(CURR.x)/den);
-            jumpY = CURR.dy == 1 ? round(abs(H-1-CURR.y)/den) : round(abs(CURR.y)/den);
+            jumpX = CURR.dx == 1 ? round(abs(W-1-CURR.x)/2.) : round(abs(CURR.x)/2.);
+            jumpY = CURR.dy == 1 ? round(abs(H-1-CURR.y)/2.) : round(abs(CURR.y)/2.);
         } else {
-            jumpX = CURR.dx == 1 ? round(abs(maxX-CURR.x)/den) : round(abs(minX-CURR.x))/den;
-            jumpY = CURR.dy == 1 ? round(abs(maxY-CURR.y)/den) : round(abs(minY-CURR.y)/den);
+            jumpX = CURR.dx == 1 ? round(abs(maxX-CURR.x)/2.) : round(abs(minX-CURR.x)/2.);
+            jumpY = CURR.dy == 1 ? round(abs(maxY-CURR.y)/2.) : round(abs(minY-CURR.y)/2.);
         }
 
         // Ensure jumps != 0
