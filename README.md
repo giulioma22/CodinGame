@@ -29,6 +29,29 @@ Buildings are represented as a rectangular array of windows, the window in the t
 
 </details>
 
+## :spoon: There is no Spoon - EP1 (Solved: 8/8) :heavy_check_mark:
+
+<details>
+  <summary>Show more</summary>
+<br>
+The game is played on a rectangular grid with a given size. Some cells contain power nodes. The rest of the cells are empty.<br>
+<br>
+The goal is to find, when they exist, the horizontal and vertical neighbors of each node.
+
+### Rules :book:
+
+To do this, you must find each (x1,y1) coordinates containing a node, and display the (x2,y2) coordinates of the next node to the right, and the (x3,y3) coordinates of the next node to the bottom within the grid.<br>
+<br>
+If a neighbor does not exist, you must output the coordinates -1 -1 instead of (x2,y2) and/or (x3,y3).<br>
+<br>
+You lose if:<br>
+- You give an incorrect neighbor for a node.<br>
+- You give the neighbors for an empty cell.<br>
+- You compute the same node twice.<br>
+- You forget to compute the neighbors of a node.
+
+</details>
+
 ## :vertical_traffic_light: Traffic Lights (ANEO Sponsored Puzzle) (Solved: 10/10) :heavy_check_mark:
 
 <details>
@@ -45,15 +68,11 @@ Your vehicle enters the zone directly at the speed programmed on the cruise cont
 ### Rules :book:
 
 You are given the following:<br>
-<br>
 - An integer speed for the maximum speed allowed on the portion of the road (in km/h).<br>
-<br>
 - An integer lightCount for the number of traffic lights on the road.<br>
-<br>
 - lightCount next lines:<br>
-- - An integer distance representing the distance of the traffic light from the starting point (in meters).<br>
-- - An integer duration representing the duration of the traffic light on each color.<br>
-<br>
+  - An integer distance representing the distance of the traffic light from the starting point (in meters).<br> 
+  - An integer duration representing the duration of the traffic light on each color.<br>
 A traffic light alternates a period of duration seconds in green and then duration seconds in red.<br>
 All traffic lights turn green at the same time as you enter the area.<br>
 
