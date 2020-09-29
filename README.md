@@ -29,6 +29,33 @@ Buildings are represented as a rectangular array of windows, the window in the t
 
 </details>
 
+## :space_invader: Skynet Revolution - Episode 1 (Solved: 4/4) :heavy_check_mark:
+
+<details>
+  <summary>Show more</summary>
+<br>
+Your virus has caused a backdoor to open on the Skynet network enabling you to send new instructions in real time.<br>
+<br>
+You decide to take action by stopping Skynet from communicating on its own internal network.<br>
+<br>
+Skynet's network is divided into several smaller networks, in each sub-network is a Skynet agent tasked with transferring information by moving from node to node along links and accessing gateways leading to other sub-networks.<br>
+<br>
+Your mission is to reprogram the virus so it will sever links in such a way that the Skynet Agent is unable to access another sub-network thus preventing information concerning the presence of our virus to reach Skynet's central hub.
+
+### Rules :book:
+
+For each test you are given:<br>
+- A map of the network.<br>
+- The position of the exit gateways.<br>
+- The starting position of the Skynet agent.<br>
+>>> Nodes can only be connected to up to a single gateway. <<<<br>
+<br>
+Each game turn:<br>
+- First off, you sever one of the given links in the network.<br>
+- Then the Skynet agent moves from one Node to another accessible Node.<br>
+
+</details>
+
 ## :spoon: There is no Spoon - EP1 (Solved: 8/8) :heavy_check_mark:
 
 <details>
