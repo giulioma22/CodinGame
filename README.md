@@ -49,7 +49,7 @@ For each test you are given:<br>
 - The position of the exit gateways.<br>
 - The starting position of the Skynet agent.<br>
 <br>
-__Note__: Nodes can only be connected to up to a single gateway.<br>
+__Note__ Nodes can only be connected to up to a single gateway.<br>
 <br>
 Each game turn:<br>
 - First off, you sever one of the given links in the network.<br>
