@@ -8,6 +8,7 @@ Reference puzzles from www.codingame.com
 <details>
   <summary>Show more</summary>
 <br>
+
 Skynet is responding to your intrusion and has activated additional defenses:<br>
 - Most of the links have been reinforced: your virus no longer has the possibility to destroy a link between two ordinary nodes, it can now only sever links leading to gateways. If it attempts to cut a link between two ordinary nodes it will be detected and deleted.<br>
 - Nodes may now be connected to up to two gateways!<br>
