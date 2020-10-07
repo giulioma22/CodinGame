@@ -3,6 +3,44 @@
 Reference puzzles from www.codingame.com  
 (Profile: www.codingame.com/profile/6fd26e5ad551969b53d688825dace3397633043)
 
+## :space_invader: Skynet Revolution - Episode 2 (Solved: 6/6) :heavy_check_mark:
+
+<details>
+  <summary>Show more</summary>
+<br>
+Skynet is responding to your intrusion and has activated additional defenses:<br>
+- Most of the links have been reinforced: your virus no longer has the possibility to destroy a link between two ordinary nodes, it can now only sever links leading to gateways. If it attempts to cut a link between two ordinary nodes it will be detected and deleted.<br>
+- Nodes may now be connected to up to two gateways!<br>
+<br>
+There are six new tests to pass in this final confrontation.<br>
+<br>
+
+__Recap:__<br>
+<br>
+Your virus has caused a backdoor to open on the Skynet network enabling you to send new instructions in real time.<br>
+<br>
+You decide to take action by stopping Skynet from communicating on its own internal network.<br>
+<br>
+Skynet's network is divided into several smaller networks, in each sub-network is a Skynet agent tasked with transferring information by moving from node to node along links and accessing gateways leading to other sub-networks.<br>
+<br>
+Your mission is to reprogram the virus so it will sever links in such a way that the Skynet Agent is unable to access another sub-network thus preventing information concerning the presence of our virus to reach Skynet's central hub.
+
+### Rules :book:
+
+For each test you are given:<br>
+- A map of the network.<br>
+- The position of the exit gateways.<br>
+- The starting position of the Skynet agent.<br>
+<br>
+
+__Note:__ Nodes can only be connected to up to a single gateway.<br>
+<br>
+Each game turn:<br>
+- First off, you sever one of the given links in the network.<br>
+- Then the Skynet agent moves from one Node to another accessible Node.<br>
+
+</details>
+
 ## :bat: Shadows of the Knight - Episode 1 (Solved: 7/7) :heavy_check_mark:
 
 <details>
@@ -49,7 +87,8 @@ For each test you are given:<br>
 - The position of the exit gateways.<br>
 - The starting position of the Skynet agent.<br>
 <br>
-__Note__ Nodes can only be connected to up to a single gateway.<br>
+
+__Note:__ Nodes can only be connected to up to a single gateway.<br>
 <br>
 Each game turn:<br>
 - First off, you sever one of the given links in the network.<br>
