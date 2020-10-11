@@ -42,7 +42,7 @@ Each game turn:<br>
 
 </details>
 
-## :: Don't Panic - Episode 1 (Solved: 7/7) :heavy_check_mark:
+## :robot: Don't Panic - Episode 1 (Solved: 7/7) :heavy_check_mark:
 
 <details>
   <summary>Show more</summary>
