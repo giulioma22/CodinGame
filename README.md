@@ -173,6 +173,45 @@ All traffic lights turn green at the same time as you enter the area.<br>
 
 </details>
 
+## :black_joker: War (Solved: 9/9) :heavy_check_mark:
+
+<details>
+  <summary>Show more</summary>
+<br>
+
+Let's go back to basics with this simple card game: war!<br>
+<br>
+Your goal is to write a program which finds out which player is the winner for a given card distribution of the "war" game.
+
+### Rules :book:
+
+War is a card game played between two players. Each player gets a variable number of cards of the beginning of the game: that's the player's deck. Cards are placed face down on top of each deck.<br>
+<br>
+
+__Step 1 : Fight__<br>
+At each game round, in unison, each player reveals the top card of their deck – this is a "battle" – and the player with the higher card takes both the cards played and moves them to the bottom of their stack. The cards are ordered by value as follows, from weakest to strongest:<br>
+2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A.<br>
+<br>
+
+__Step 2: War__<br>
+If the two cards played are of equal value, then there is a "war". First, both players place the three next cards of their pile face down. Then they go back to step 1 to decide who is going to win the war (several "wars" can be chained). As soon as a player wins a "war", the winner adds all the cards from the "war" to their deck.<br>
+<br>
+Special cases:<br>
+
+- If a player runs out of cards during a "war" (when giving up the three cards or when doing the battle), then the game ends and both players are placed equally first.<br>
+The test cases provided in this puzzle are built in such a way that a game always ends (you do not have to deal with infinite games).<br>
+Each card is represented by its value followed by its suit: D, H, C, S. For example: 4H, 8C, AS.<br>
+- When a player wins a battle, they put back the cards at the bottom of their deck in a precise order. First the cards from the first player, then the one from the second player (for a "war", all the cards from the first player then all the cards from the second player).<br>
+<br>
+For example, if the card distribution is the following:<br>
+Player 1 : 10D 9S 8D KH 7D 5H 6S<br>
+Player 2 : 10H 7H 5C QC 2C 4H 6D<br>
+Then after one game turn, it will be:<br>
+Player 1 : 5H 6S 10D 9S 8D KH 7D 10H 7H 5C QC 2C<br>
+Player 2 : 4H 6D
+
+</details>
+
 ## :page_with_curl: 1D Spreadsheet (Solved: 13/13) :heavy_check_mark:
 
 <details>
